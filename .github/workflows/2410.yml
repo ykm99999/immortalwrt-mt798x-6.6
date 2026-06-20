@@ -1,3 +1,4 @@
+# .github/workflows/build-n60pro.yml
 name: Build N60 Pro 精简高性能固件 (内置 SSR Plus+)
 
 on:
@@ -13,7 +14,7 @@ jobs:
       - name: Checkout your repository
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: openwrt-24.10-6.6   # ✅ 修正点：指定正确的分支名
           fetch-depth: 0
 
       - name: Prepare build environment
