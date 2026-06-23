@@ -236,13 +236,13 @@
 		#size-cells = <1>;
 		reg = <0>;
 
-		spi-max-frequency = <52000000>;
+		spi-max-frequency = <20000000>;
 		spi-tx-bus-width = <4>;
 		spi-rx-bus-width = <4>;
-
+		
 		mediatek,nmbm;
-		mediatek,bmt-max-ratio = <1>;
-		mediatek,bmt-max-reserved-blocks = <64>;
+        	mediatek,bmt-max-ratio = <1>;
+        	mediatek,bmt-max-reserved-blocks = <64>;
 
 		partitions {
 			compatible = "fixed-partitions";
@@ -295,7 +295,7 @@
 
 			partition@580000 {
 				label = "ubi";
-				reg = <0x580000 0x7280000>;
+				reg = <0x0580000 0x7280000>;
 			};
 		};
 	};
